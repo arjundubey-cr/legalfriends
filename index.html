@@ -3,32 +3,62 @@
   <head>
     <link rel="stylesheet" href="./styles/style.css" />
     <meta charset="UTF-8" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title></title>
   </head>
   <body>
     <section>
-      <img
-        src="./statics/images/hunters-race-MYbhN8KaaEc-unsplash.jpg"
-        alt="Lawyer"
-        class="header-image"
-      />
-      <header class="main-header">
-        <div class="branding">
-          <img src="#" alt="" />
-          <div class="brand-name">LegalFriends</div>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarTogglerDemo03"
+          aria-controls="navbarTogglerDemo03"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="#">LegalFriends</a>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+          <ul class="navbar-nav mr-10 mt-2 mt-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">Our Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">Our Expertise</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+          </ul>
         </div>
-        <ul class="nav-link-list">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About Us</a></li>
-          <li><a href="#">Practice</a></li>
-          <li><a href="#">Contact Us</a></li>
-        </ul>
-      </header>
+      </nav>
       <div class="content">
+        <img
+          src="./statics/images/hunters-race-MYbhN8KaaEc-unsplash.jpg"
+          alt="Lawyer"
+          class="header-image"
+        />
         <div class="overlay-text">
           <h1>
-            We are your legal friends
+            We are legal friends
           </h1>
           <h2>
             One roof solution for all the secretarial, financial, corporate and
@@ -37,12 +67,12 @@
         </div>
       </div>
     </section>
-    <section class="about-us container">
-      <div class="section-heading">
+    <section class="about-us" id="about">
+      <div class="section-heading container2">
         About Us
         <div class="underline"></div>
       </div>
-      <div class="descrip">
+      <div class="descrip container">
         <img
           src="./statics/images/scott-graham-OQMZwNd3ThU-unsplash.jpg"
           alt="About Us"
@@ -65,31 +95,198 @@
         </ul>
       </div>
     </section>
-    <section class="area-of-expert container">
+    <section class="area-of-expert container2" id="expertise">
       <div class="section-heading">
         Area of Expertise
       </div>
       <div class="descrip">
-        <ul>
-          <li>Corporate</li>
+        <ul class="area-of-expert-list">
           <li>
+            <img
+              src="https://img.icons8.com/doodle/28/000000/checkmark.png"
+            />Corporate
+          </li>
+          <li>
+            <img src="https://img.icons8.com/doodle/28/000000/checkmark.png" />
             Foreign Exchange Laws (FEMA, FCRA & R.B.I. Regulations / Approvals),
           </li>
           <li>
+            <img src="https://img.icons8.com/doodle/28/000000/checkmark.png" />
             Corporate Advisory (Incorporation of all types of body corporates
             including Companies, LLPs, Partnership, Proprietorship, Trusts,
             Societies, Infusing Foreign Equity, Government Approvals etc.),
           </li>
         </ul>
-        <ul>
-          <li>Secretarial</li>
-          <li>Regulatory Issues</li>
+        <ul class="area-of-expert-list">
           <li>
+            <img
+              src="https://img.icons8.com/doodle/28/000000/checkmark.png"
+            />Secretarial
+          </li>
+          <li>
+            <img
+              src="https://img.icons8.com/doodle/28/000000/checkmark.png"
+            />Regulatory Issues
+          </li>
+          <li>
+            <img src="https://img.icons8.com/doodle/28/000000/checkmark.png" />
             Accounts, Financial works and such other allied corporate and legal
             matters.
           </li>
         </ul>
       </div>
     </section>
+
+    <section class="area-of-expert container2" id="services">
+      <div class="section-heading">
+        Our Services
+      </div>
+      <div class="descrip">
+        <ul class="area-of-expert-list">
+          <li>
+            <img
+              src="https://img.icons8.com/cotton/30/000000/sport-badge--v2.png"
+            />Legal Drafting and Vetting.
+          </li>
+          <li>
+            <img
+              src="https://img.icons8.com/cotton/30/000000/sport-badge--v2.png"
+            />
+            Secretarial Matters: Maintenance/Review of Minutes Books, Statutory
+            Registers and all other secretarial records, filing of relevant
+            forms, documents etc with all concerned authorities and all other
+            secretarial functions.
+          </li>
+          <li>
+            <img
+              src="https://img.icons8.com/cotton/30/000000/sport-badge--v2.png"
+            />Secretarial Audit
+          </li>
+          <li>
+            <img
+              src="https://img.icons8.com/cotton/30/000000/sport-badge--v2.png"
+            />
+            Incorporation of all kinds of Companies, LLPs, Partnerships,
+            Proprietorship, Trusts, Societies.
+          </li>
+          <li>
+            <img
+              src="https://img.icons8.com/cotton/30/000000/sport-badge--v2.png"
+            />
+            Conversion of Status of Companies and formalities involved thereof.
+          </li>
+
+          <li>
+            <img
+              src="https://img.icons8.com/cotton/30/000000/sport-badge--v2.png"
+            />Trademark, Patents and Copyrights related works
+          </li>
+          <li>
+            <img
+              src="https://img.icons8.com/cotton/30/000000/sport-badge--v2.png"
+            />
+            Shifting of Registered Office from one state to another and
+            formalities involved thereof.
+          </li>
+          <li>
+            <img
+              src="https://img.icons8.com/cotton/30/000000/sport-badge--v2.png"
+            />Loan Syndication and Project Report Documentation.
+          </li>
+        </ul>
+        <ul class="area-of-expert-list">
+          <li>
+            <img
+              src="https://img.icons8.com/cotton/30/000000/sport-badge--v2.png"
+            />Filing of Balance Sheet in XBRL Mode
+          </li>
+          <li>
+            <img
+              src="https://img.icons8.com/cotton/30/000000/sport-badge--v2.png"
+            />FCRA Registration and compliances under FEMA and FCRA.
+          </li>
+          <li>
+            <img
+              src="https://img.icons8.com/cotton/30/000000/sport-badge--v2.png"
+            />MSME/TAN/PAN/GST/IEC Registration
+          </li>
+          <li>
+            <img
+              src="https://img.icons8.com/cotton/30/000000/sport-badge--v2.png"
+            />Filing of ITRs/ GST Returns/TDS Returns
+          </li>
+
+          <li>
+            <img
+              src="https://img.icons8.com/cotton/30/000000/sport-badge--v2.png"
+            />
+            Obtaining clearance and approvals from Statutory Authorities and
+            liasioning with Ministry of Corporate Affairs, Regional Directors,
+            ROC for compounding of offences, condonation of delay
+          </li>
+          <li>
+            <img
+              src="https://img.icons8.com/cotton/30/000000/sport-badge--v2.png"
+            />Dematerialisation of Shares with NSDL and CDSL.
+          </li>
+          <li>
+            <img
+              src="https://img.icons8.com/cotton/30/000000/sport-badge--v2.png"
+            />Digital Signature Certificate of Class-2 and Class-3
+          </li>
+          <li>
+            <img
+              src="https://img.icons8.com/cotton/30/000000/sport-badge--v2.png"
+            />Other Secretarial and Legal Services
+          </li>
+        </ul>
+      </div>
+    </section>
+    <footer class="main-footer">
+      <div class="other-links container2">
+        <div class="heading">Other Links</div>
+        <ul class="link-list">
+          <li><a href="htpps://www.mca.gov.in">www.mca.gov.in</a></li>
+          <li>
+            <a href="htpps://www.incometaxindiaefiling.gov.in"
+              >www.incometaxindiaefiling.gov.in</a
+            >
+          </li>
+          <li><a href="htpps://www.rbi.org.in">www.rbi.org.in</a></li>
+          <li><a href="htpps://www.gst.gov.in">www.gst.gov.in</a></li>
+          <li><a href="htpps://www.nclt.gov.in">www.nclt.gov.in</a></li>
+          <li><a href="htpps://www.icsi.edu">www.icsi.edu</a></li>
+        </ul>
+      </div>
+      <div class="contact-us container2" id="contact">
+        <div class="heading">Contact Us</div>
+        <ul class="link-list">
+          <li>Contact Person: Prerna Mittal</li>
+          <li>
+            E-Mail:
+            <a href="mailto:csprerna.mittal@gmail.com"
+              >csprerna.mittal@gmail.com</a
+            >
+          </li>
+          <li>Phone Number: +91-99104 60779</li>
+          <li>Address: Keshavpuram, Pitampura and Rohini</li>
+        </ul>
+      </div>
+    </footer>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
