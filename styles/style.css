@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Roboto|Yeseva+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;562;600;700&family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  height: 100%;
+  line-height: 1.4;
+  font-family: "Lato", sans-serif;
+  width: 100%;
+  padding: 0;
+}
+
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.9);
+  width: 100%;
+  position: absolute;
+  top: 0;
+  padding: 20px 40px;
+  align-items: center;
+}
+.branding {
+  display: flex;
+}
+.brand-name {
+  font-size: 3.5em;
+  color: aliceblue;
+  padding: 0;
+  font-family: "Bubblegum Sans", "Roboto", sans-serif;
+}
+.nav-link-list {
+  list-style-type: none;
+  display: flex;
+}
+.nav-link-list li {
+  padding: 1em;
+  font-size: 1.5em;
+  font-weight: 800;
+  font-family: "Raleway", sans-serif;
+}
+.nav-link-list li a {
+  text-decoration: none;
+  color: white;
+}
+.header-image {
+  width: 100%;
+  height: 90vh;
+  image-rendering: pixelated;
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+}
+.overlay-text {
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+}
+
+.container {
+  max-width: 90%;
+  padding: 0 50px;
+}
+.section-heading {
+  margin-top: 1.5em;
+  font-size: 2.75em;
+  font-weight: bold;
+}
+.about-us .descrip {
+  display: flex;
+  margin: 1em auto;
+  justify-content: center;
+  align-items: center;
+}
+.about-us .descrip img {
+  width: 650px;
+  height: 500px;
+}
+.about-list {
+  width: 650px;
+  list-style-type: none;
+  font-size: 1.25em;
+  margin-left: 100px;
+}
+.about-list li {
+  padding: 0.5em;
+  font-size: 1.2em;
+}
+.area-of-expert .descrip {
+  display: flex;
+  justify-content: space-between;
+}
