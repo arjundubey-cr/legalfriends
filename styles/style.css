@@ -15,19 +15,20 @@ html,
 body {
   height: 100%;
   line-height: 1.4;
-  font-family: "Lato", sans-serif;
+  font-family: "Raleway", sans-serif;
   width: 100%;
   padding: 0;
 }
-a{
-  color: white;
+a {
+  color: white !important;
   text-decoration: none;
 }
-a:visited{
-  text-decoration: none;
+a:visited {
+  text-decoration: none !important;
 }
-a:hover{
-  color: #616C6F;
+a:hover {
+  text-decoration: none !important;
+  color: #616c6f;
   border-bottom: 3px solid darkgoldenrod;
 }
 .navbar {
@@ -58,7 +59,7 @@ a:hover{
   font-weight: 800 !important;
   font-family: "Raleway", sans-serif;
 }
-.nav-item .nav-link{
+.nav-item .nav-link {
   text-decoration: none;
   color: white !important;
 }
@@ -73,7 +74,7 @@ a:hover{
   background-color: rgb(0, 0, 0); /* Fallback color */
   background-color: rgba(0, 0, 0, 0.4); /* Black w/opacity/see-through */
   color: white;
-  font-weight: bold;
+  font-weight: bold !important;
   border: 3px solid #f1f1f1;
   position: absolute;
   top: 35%;
@@ -84,85 +85,128 @@ a:hover{
   padding: 20px;
   text-align: center;
 }
-
-.container {
-  max-width: 90%;
-  padding: 0 50px;
-}
 .section-heading {
   margin-top: 1.5em;
   font-size: 2.75em;
-  font-weight: bold;0
-}
-.about-us {
-  background-color: antiquewhite;
-  padding-bottom: 20px;
-  margin-top: 50px;
+  font-weight: bold;
+  border-bottom: 3px solid darkgoldenrod;
+  margin-bottom: 15px;
 }
 
-.about-us .descrip {
-  display: flex;
-  margin: 1em auto;
-  justify-content: center;
-  align-items: center;
-}
-.about-us .descrip img {
-  width: 650px;
-  height: 500px;
-}
 .about-list {
-  width: 650px;
+  display: flex;
+  justify-content: space-between !important;
   list-style-type: none;
-  font-size: 1.25em;
-  margin-left: 100px;
 }
+
 .about-list li {
-  padding: 0.5em;
+  display: flex;
+  background-color: #f0f2f6;
+  flex-direction: column;
+  align-items: center;
   font-size: 1.15em;
+  padding: 0.75em;
 }
-.area-of-expert .descrip {
+.about-list li p {
+  padding-top: 15px;
+  text-align: center;
+}
+.img-list {
+  width: 100px !important;
+  height: 100px !important;
+}
+.descrip {
   display: flex;
   justify-content: space-between;
 }
 .area-of-expert-list {
   list-style-type: none;
-  width: 600px;
+}
+.area-of-expert-list li {
+  display: flex;
+}
+.area-of-expert-list li p {
+  padding: 5px;
+}
+.img-tick {
+  width: 50px !important;
+  height: 50px !important;
+}
+.img-achv {
+  height: 35px;
+  width: 35px;
+  margin-right: 5px;
 }
 .area-of-expert-list li {
   font-size: 1.5em;
   padding: 0.25em;
 }
 
-.container2{
-  max-width: 1280px;
-  margin: 0 auto;
-}
-
-.main-footer{
+.main-footer {
   background-color: #252525;
-  width: 100%;
   height: 300px;
   display: flex;
-  justify-content: space-between;
+  margin: 0 auto !important;
+  justify-content: space-between !important;
 }
-
-.heading{
+.footer-color {
+  background-color: #252525;
+}
+.heading {
   font-size: 1.85em;
   color: turquoise;
   font-weight: bolder;
   padding: 1em;
 }
-.link-list{
+.link-list {
   display: flex;
   flex-direction: column;
 }
-.link-list li{
+.link-list li {
   list-style-type: none;
   color: #f1f1f1;
   font-size: 1.12em;
   margin-left: 30px;
-  padding: 0 0.25em;
+  padding: 0 0.35em;
 }
-svg{
-  color: white;
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+}
+
+/* Medium devices (landscape tablets, 768px and down) */
+@media only screen and (max-width: 991px) {
+  .about-list {
+    display: flex;
+    flex-direction: column !important;
+    justify-content: space-between !important;
+    list-style-type: none;
+    margin: 0 auto;
+  }
+  .about-list li {
+    margin: 20px auto;
+  }
+  .descrip {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .main-footer {
+    flex-direction: column;
+    height: 100%;
+  }
+  .overlay-text {
+    display: none;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
 }
